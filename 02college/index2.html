@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="../css/reset.css">
     <style>
         .body{min-width: 1200px;}
         .topNavWrap{background: blue;}
@@ -27,6 +27,16 @@
             display: flex;justify-content: center;align-items: center;
             height: 100%;padding: 0 10px;
         }
+        .logoWrap{width: 1200px;margin: 0 auto;display: flex;justify-content: space-between;height:120px;}
+        
+        .logo{height: 100%;padding: 30px 70px;}
+        .logoWrap ul{display: flex;height: 100%;}
+        .logoWrap ul li{background: red;margin-right: 30px;}
+        .logoWrap a{display: flex;justify-content: center;align-items: center;height: 100%;padding: 20px;}
+        
+        
+        
+
         header{height: 160px;}
         section.section{
             background: skyblue;
@@ -79,17 +89,33 @@
                     <ul>
                         <li><a href="#">글자크기</a></li>
                         <li><a href="#">찾아오시는길</a></li>
+                        <li><a href="#">English</a></li>
+                        <li><a href="#">사이트맵</a></li>
                     </ul>
                 </div>
             </div>
-            
+        </div>
+        <div class="logoWrap">
+            <div class="logo">
+                <h2>한국대학교</h2>
+                <p>HANGUK UNIVERSITY</p>
+            </div>
+            <div class="logoMenu">
+                <ul>
+                    <li><a href="#">대학소개</a></li>
+                    <li><a href="#">학과소개</a></li>
+                    <li><a href="#">학사안내</a></li>
+                    <li><a href="#">대학생활</a></li>
+                    <li><a href="#">학생지원센터</a></li>
+                </ul>
+            </div>
         </div>
     </header>
     <section class="section">
         <div class="container titleWrap">
             <div class="title">
-                <h3>Lorem ipsum dolor sit.</h3>
-                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+                <h3>함께 나누며 세상을 이끌어</h3>
+                <h2>세계로향하는 한국대학교</h2>
             </div>
             <div class="secBannerWrap">
                 <ul>
@@ -103,7 +129,10 @@
             <ul class="clearfix">
                 <li>1</li>
                 <li>2</li>
-                <li>3</li>
+                <li>
+                    <div class=content3>
+                        div
+                    </div></li>
                 <li>4</li>
                 <li>5</li>
                 <li>6</li>
