@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
     <style>
         .body{min-width: 1200px;}
         .topNavWrap{background: blue;}
@@ -47,23 +52,24 @@
             padding:70px 0;
         }
         .container{width: 1200px;margin: 0 auto;}
-        .titleWrap{display: flex;justify-content: space-between;height: 140px;background: white;align-items: center;margin-bottom: 30px;}
+        .titleWrap{display: flex;justify-content: space-between;height: 140px;;align-items: center;margin-bottom: 30px;color:white}
         .titleWrap .title>h3{font-size: 40px;}
         .titleWrap .title>h2{font-size: 60px;}
-        .secBannerWrap>ul{display: flex;background-color: pink;width: 420px;height: 140px;justify-content: center;align-items: center;}
-        .secBannerWrap>ul>li {width: 25%;padding: 25px;}
-        .secBannerWrap>ul>li>a {font-size:16px;text-align: center;}
-        
+        .secBannerWrap>ul{display: flex;width: 420px;height: 140px;justify-content: center;align-items: center;}
+        .secBannerWrap>ul>li {width: 25%;display: flex;justify-content: center;align-items: center;}
+        .secBannerWrap>ul>li>a {font-size:13px;text-align: center;line-height: 15px;color:#fff;}
+        .secBannerWrap>ul>li>a>img{margin-bottom: 10px;}
+
         /* section */
         .contentWrap>ul>li{
-            float: left;width: 25%;height: 225px;
+            float: left;width: 25%;height: 225px;position: relative;
         }
         
         .contentWrap>ul>li:nth-child(1){
-            width: 75%;height: 450px;
+            width: 75%;height: 450px;position: relative;
         }
         .contentWrap>ul>li:nth-child(2){
-            height: 450px;
+            height: 450px;overflow: hidden;
         }
         .contentWrap>ul>li:nth-child(8){
             width: 75%;
@@ -76,7 +82,50 @@
         .contentWrap>ul>li:nth-child(6){background-color: yellowgreen;}
         .contentWrap>ul>li:nth-child(7){background-color: violet;}
         .contentWrap>ul>li:nth-child(8){background-color: #fff;}
-</style>
+
+        .bx-wrapper {
+            -moz-box-shadow: 0 0 0 transparent;
+            -webkit-box-shadow: 0 0 0 transparent;
+            box-shadow: 0 0 0 transparent;
+            border: 0 none;
+            margin-bottom: 0; 
+        }
+        .bx-wrapper .bx-pager{
+            bottom: 30px;
+        }
+
+        .contentWrap>ul>li:nth-child(1) .next,
+        .contentWrap>ul>li:nth-child(1) .prev{
+            position: absolute;top: 50%;
+            transform: translateY(-50%);
+            cursor:pointer;
+        }
+        .contentWrap>ul>li:nth-child(1) .next{right: 0;}
+        .contentWrap>ul>li:nth-child(1) .prev{left: 0;}
+
+        .contentWrap>ul>li:nth-child(1) .txt{position: absolute;top: 20%;
+            left: 10%;font-size:60px;color:#1651b6}
+        
+        .contentWrap>ul>li:nth-child(1) .btn{position: absolute;top: 75%;left: 10%;
+            display: block;background: #192d4e;width: 150px;
+            height: 40px;line-height: 40px;
+            text-align: center;color:white;}
+        
+ </style>
+ <script>
+    $(document).ready(function(){
+       var myslider1 = $(".slider").bxSlider({
+            controls:false
+        });
+
+        $(".next").click(function(){
+            myslider1.goToNextSlide()
+        });
+        $(".prev").click(function(){
+            myslider1.goToPrevSlide()
+        });
+    });
+ </script>
 </head>
 <body>
     <header>
@@ -154,18 +203,47 @@
         </div>
         <div class="container contentWrap">
             <ul class="clearfix">
-                <li>1</li>
-                <li>2</li>
                 <li>
-                    <div class=content3>
-                        div
-                    </div></li>
+                    <!-- size 900*450 -->
+                    <ul class="slider">
+                        <li class="conWrap">
+                            <div class="btn">자세히보기</div>
+                            <h1 class="txt">한국에서 <br>시작하는<br>새로운 꿈</h1>
+                            <img src="images/slide01.png" alt="">
+                            
+                            
+                            
+                        </li>
+                        <li class="conWrap">
+                            <h1 class="txt">한국에서 <br>시작하는<br>새로운 꿈</h1>
+                            <img src="images/slide02.png" alt="">
+                            
+                        </li>
+                        <li class="conWrap">
+                            <h1 class="txt">한국에서 <br>시작하는<br>새로운 꿈</h1>
+                            <img src="images/slide03.png" alt="">
+                            
+                        </li>
+                    </ul>
+                    <div class="prev">
+                        <img src="images/arrow01.png" alt="">
+                    </div>
+                    <div class="next">
+                        <img src="images/arrow02.png" alt="">
+                    </div>
+
+                </li>
+                <li>
+                    <h1>APP으로<br>스마트 도서관<br>바로이용하자!</h1>
+                    <img src="images/pc01.jpg" alt="">
+                </li>
+                <li>3</li>
                 <li>4</li>
                 <li>5</li>
                 <li>6</li>
                 <li>7</li>
                 <li>8</li>
-        </ul>
+            </ul>
         </div>
     </section>
 </body>
