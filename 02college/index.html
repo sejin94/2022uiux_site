@@ -13,7 +13,7 @@
     <script src="js/jquery.bxslider.js"></script>
     <style>
         .body{min-width: 1200px;}
-        .topNavWrap{background: blue;}
+        .topNavWrap{background: #0044AF}
         .navTop{
             width: 1200px;margin: 0 auto;
             display: flex;
@@ -21,7 +21,11 @@
         
         }
         .nav ul{display: flex;height: 40px;}
-        .nav ul li{background: pink;margin-right:5px;}
+        .nav ul li{background: #00163B;margin-right:5px;}
+        .nav ul li a{color:white}
+        .nav ul li:first-child{background: white;}
+        .nav ul li:first-child a{color: #6A6A6A;}
+        
         .nav a{
             display: flex;justify-content: center;align-items: center;
             height: 100%;padding: 0 20px;
@@ -30,11 +34,12 @@
         .utilMenu ul{display: flex;height: 40px;}
         .utilMenu a{
             display: flex;justify-content: center;align-items: center;
-            height: 100%;padding: 0 10px;
+            height: 100%;padding: 0 10px;font-size: 12px;
+            color:white;
         }
         .logoWrap{width: 1200px;margin: 0 auto;display: flex;justify-content: space-between;height:120px;}
         
-        .logo{height: 100%;padding: 30px 70px;}
+        .logo{margin-top: 10px;}
         .logoWrap ul{display: flex;height: 100%;}
         .logoWrap ul li{margin-right: 30px;}
         .logoWrap a{display: flex;justify-content: center;align-items: center;height: 100%;padding: 20px;}
@@ -53,7 +58,7 @@
         }
         .container{width: 1200px;margin: 0 auto;}
         .titleWrap{display: flex;justify-content: space-between;height: 140px;;align-items: center;margin-bottom: 30px;color:white}
-        .titleWrap .title>h3{font-size: 40px;}
+        .titleWrap .title{font-size: 40px;}
         .titleWrap .title>h2{font-size: 60px;}
         .secBannerWrap>ul{display: flex;width: 420px;height: 140px;justify-content: center;align-items: center;}
         .secBannerWrap>ul>li {width: 25%;display: flex;justify-content: center;align-items: center;}
@@ -111,6 +116,24 @@
             height: 40px;line-height: 40px;
             text-align: center;color:white;}
         
+        .contentWrap>ul>li:nth-child(2) .content2_body1{position:absolute;top: 20%;left: 10%;font-size: 30px;color: white;}
+        .contentWrap>ul>li:nth-child(2) .content2_body2{position:absolute;top: 50%;left: 10%;color: white;}
+        .contentWrap>ul>li:nth-child(2) .content2_body3{position:absolute;top: 75%;left: 10%;
+        display: block;width: 150px;height: 40px;line-height: 40px;
+        text-align: center;color:white;border: 1px solid #fff;}
+        
+        .contentWrap>ul>li:nth-child(3) .content3{background: #00163B;height: 100%;}
+        .contentWrap>ul>li:nth-child(3) .content3Top{padding: 20px 15px;font-size: 18px;font-weight: bold;color:white}
+        .contentWrap>ul>li:nth-child(3) .content3_bodywrap>ul{
+            display: flex;justify-content:space-between;align-items: center;
+            width: 100%;padding: 10px 30px;text-align: center;font-size: 10px;line-height: 20px;
+        }
+        .contentWrap>ul>li:nth-child(3) .content3_bodywrap>ul>li a{color:white}
+       
+        .contentWrap>ul>li:nth-child(4) .content4{background: #1651B7;height: 100%;}
+        .contentWrap>ul>li:nth-child(4) .content4Top{padding: 20px 15px;font-size: 18px;font-weight: bold;color: white;}
+        .contentWrap>ul>li:nth-child(4) ul>li{padding: 5px 20px;}
+        .contentWrap>ul>li:nth-child(4) ul>li>a{font-size: 14px;color: white;}
  </style>
  <script>
     $(document).ready(function(){
@@ -142,7 +165,7 @@
                     <ul>
                         <li><a href="#">글자크기</a></li>
                         <li><a href="#">찾아오시는길</a></li>
-                        <li><a href="#">English</a></li>
+                        <li><a href="#">ENGLISH</a></li>
                         <li><a href="#">사이트맵</a></li>
                     </ul>
                 </div>
@@ -150,8 +173,8 @@
         </div>
         <div class="logoWrap">
             <div class="logo">
-                <h2>한국대학교</h2>
-                <p>HANGUK UNIVERSITY</p>
+                <a href="#"><img src="images/hanguklogo1.png" alt=""></a>
+               
             </div>
             <div class="logoMenu">
                 <ul>
@@ -167,7 +190,7 @@
     <section class="section">
         <div class="container titleWrap">
             <div class="title">
-                <h3>함께 나누며 세상을 이끌어</h3>
+                함께 나누며 세상을 이끌어
                 <h2>세계로향하는 한국대학교</h2>
             </div>
             <div class="secBannerWrap">
@@ -207,7 +230,7 @@
                     <!-- size 900*450 -->
                     <ul class="slider">
                         <li class="conWrap">
-                            <div class="btn">자세히보기</div>
+                            <a href="#"><div class="btn">자세히보기</div></a>
                             <h1 class="txt">한국에서 <br>시작하는<br>새로운 꿈</h1>
                             <img src="images/slide01.png" alt="">
                             
@@ -215,11 +238,13 @@
                             
                         </li>
                         <li class="conWrap">
+                            <a href="#"><div class="btn">자세히보기</div></a>
                             <h1 class="txt">한국에서 <br>시작하는<br>새로운 꿈</h1>
                             <img src="images/slide02.png" alt="">
                             
                         </li>
                         <li class="conWrap">
+                            <a href="#"><div class="btn">자세히보기</div></a>
                             <h1 class="txt">한국에서 <br>시작하는<br>새로운 꿈</h1>
                             <img src="images/slide03.png" alt="">
                             
@@ -233,13 +258,67 @@
                     </div>
 
                 </li>
-                <li>
-                    <h1>APP으로<br>스마트 도서관<br>바로이용하자!</h1>
-                    <img src="images/pc01.jpg" alt="">
+                <li class="content2">
+                    <ul class="content2_body">
+                        <li class="content2_body1">APP으로<br>스마트 도서관<br>바로이용하자!</li>
+                        <li class="content2_body2">모바일 열람증은<br>도서관 자료실/도서대출 등에<br>사용 할 수 있습니다.</li>
+                        <a class="content2_body3" href="#">자세히보기</a>
+                        <img src="images/배경03.jpg" alt="">
+                        
+                    </ul>
                 </li>
-                <li>3</li>
-                <li>4</li>
-                <li>5</li>
+                <li>
+                    <div class="content3">
+                        <div class="content3Top">HOT LINK</div> 
+                        <div class="content3_bodywrap">
+                            <ul>
+                                <li>
+                                    <a href="">
+                                    <img src="images/hotlink1.png" alt="">
+                                    <p>국제교류<br>센터</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                    <img src="images/hotlink2.png" alt="">
+                                    <p>원격지원<br>시스템</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                    <img src="images/hotlink3.png" alt="">
+                                    <p>예산 / 결산 <br>공고</p>
+                                    </a>
+                                </li>   
+                        </ul>
+                        </div>
+                        
+                    </div>
+                </li>
+                <li>
+                    <div class="content4">
+                        <div class="content4Top">공지사항</div>
+                        <ul>
+                            <li><a href="">[공지]한국대학교 웹진...   2016-06-12</a></li>
+                            <li><a href="">[보도]우수대학교 선정 수상 2016-06-17</a></li>
+                            <li><a href="">[공지]대학입시 설명회      2016-06-05</a></li>
+                            <li><a href="">[공지]2016년 1학기 성적... 2016-05-14</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="content5">
+                        <div class="content5Top">SNS NEWS</div>
+                            <ul>
+                                <li><img src="images/학교01.jpg" alt=""></li>
+                                <li>한국 대학교는<br>2017학년도 신입생<br>입학식을 3월 2일(목)<br>본교 종합체육관...</li>
+                            </ul>
+                        <div>
+                            
+                        </div>
+                        
+                    </div>
+                </li>
                 <li>6</li>
                 <li>7</li>
                 <li>8</li>
