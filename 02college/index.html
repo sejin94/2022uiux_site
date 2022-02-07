@@ -116,11 +116,13 @@
             height: 40px;line-height: 40px;
             text-align: center;color:white;}
         
+        .contentWrap>ul>li:nth-child(2) img{width:100%;height: 100%;}
         .contentWrap>ul>li:nth-child(2) .content2_body1{position:absolute;top: 20%;left: 10%;font-size: 30px;color: white;}
         .contentWrap>ul>li:nth-child(2) .content2_body2{position:absolute;top: 50%;left: 10%;color: white;}
         .contentWrap>ul>li:nth-child(2) .content2_body3{position:absolute;top: 75%;left: 10%;
         display: block;width: 150px;height: 40px;line-height: 40px;
-        text-align: center;color:white;border: 1px solid #fff;}
+        text-align: center;color:white;border: 1px solid #fff;background-color:rgba(0,0,0,0.4);}
+        
         
         .contentWrap>ul>li:nth-child(3) .content3{background: #00163B;height: 100%;}
         .contentWrap>ul>li:nth-child(3) .content3Top{padding: 20px 15px;font-size: 18px;font-weight: bold;color:white}
@@ -128,18 +130,52 @@
             display: flex;justify-content:space-between;align-items: center;
             width: 100%;padding: 10px 30px;text-align: center;font-size: 10px;line-height: 20px;
         }
-        .contentWrap>ul>li:nth-child(3) .content3_bodywrap>ul>li a{color:white}
+        .contentWrap>ul>li:nth-child(3) .content3_bodywrap>ul>li a{color:white;}
        
         .contentWrap>ul>li:nth-child(4) .content4{background: #1651B7;height: 100%;}
         .contentWrap>ul>li:nth-child(4) .content4Top{padding: 20px 15px;font-size: 18px;font-weight: bold;color: white;}
         .contentWrap>ul>li:nth-child(4) ul>li{padding: 5px 20px;}
         .contentWrap>ul>li:nth-child(4) ul>li>a{font-size: 14px;color: white;}
+
+        .contentWrap>ul>li:nth-child(5) .content5{background: white;height: 100%;}
+        .contentWrap>ul>li:nth-child(5) .content5Top{padding: 20px 15px;font-size: 18px;font-weight: bold;color:#00173C;}
+        .contentWrap>ul>li:nth-child(5) ul{display: flex;justify-content: center;align-items: center;}
+        .contentWrap>ul>li:nth-child(5) ul>li{ padding: 5px 10px;}
+        .contentWrap>ul>li:nth-child(5) ul>li>img{display: block;}
+
+        .contentWrap>ul>li:nth-child(5) ul>li>a{font-size: 14px;}
+        .contentWrap>ul>li:nth-child(5) .Logo{float: right;}
+        .contentWrap>ul>li:nth-child(5) .Logo>a>img{display: block;float: left;}
+        .contentWrap>ul>li:nth-child(5) .Logo>a:nth-child(4){margin-right: 15px;}
+
+        .contentWrap>ul>li:nth-child(6) img{max-width: 100%;height: 100%;}
+        .contentWrap>ul>li:nth-child(6) .banner{position: absolute;bottom: 0;left: 50%;transform: translateX(-50%);
+        display: block;background-color:rgba(0,0,0,0.5);width: 100%;text-align: center;height: 20%;line-height: 40px;
+        color:white;
+        }
+
+        .contentWrap>ul>li:nth-child(7) img{min-width: 100%;height: 100%;}
+        .contentWrap>ul>li:nth-child(7) a{position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);}
+
+        .contentWrap>ul>li:nth-child(8) {overflow: hidden;}
+ 
  </style>
  <script>
     $(document).ready(function(){
        var myslider1 = $(".slider").bxSlider({
-            controls:false
-        });
+            controls:false,
+            auto:true
+            })
+        var myslider2 = $(".slider2").bxSlider({
+            controls:false,
+            auto:true
+            })
+        
+        ;
+        
+
+
+        
 
         $(".next").click(function(){
             myslider1.goToNextSlide()
@@ -259,11 +295,12 @@
 
                 </li>
                 <li class="content2">
+                    <img src="images/배경03틴트.png" alt="">
                     <ul class="content2_body">
                         <li class="content2_body1">APP으로<br>스마트 도서관<br>바로이용하자!</li>
                         <li class="content2_body2">모바일 열람증은<br>도서관 자료실/도서대출 등에<br>사용 할 수 있습니다.</li>
                         <a class="content2_body3" href="#">자세히보기</a>
-                        <img src="images/배경03.jpg" alt="">
+                        
                         
                     </ul>
                 </li>
@@ -309,19 +346,41 @@
                 <li>
                     <div class="content5">
                         <div class="content5Top">SNS NEWS</div>
-                            <ul>
-                                <li><img src="images/학교01.jpg" alt=""></li>
-                                <li>한국 대학교는<br>2017학년도 신입생<br>입학식을 3월 2일(목)<br>본교 종합체육관...</li>
-                            </ul>
-                        <div>
-                            
+                        <ul><li><img src="images/학교01.jpg" alt=""></li>
+                            <li><a href="">
+                                한국 대학교는<br>2017학년도 신입생<br>입학식을 3월 2일(목)
+                                <br>본교 종합체육관...</a>
+                            </li></ul>
+                        <div class="Logo">
+                            <a href=""><img src="images/페북.png" alt=""></a>
+                            <a href=""><img src="images/트위터 (2).png" alt=""></a>
+                            <a href=""><img src="images/구글.png" alt=""></a>
+                            <a href=""><img src="images/유튜브.png" alt=""></a> 
                         </div>
-                        
                     </div>
                 </li>
-                <li>6</li>
-                <li>7</li>
-                <li>8</li>
+                <li>
+                    <a href="" class="banner">캠퍼스투어</a>
+                    <img src="images/학교02.jpg" alt="">
+                </li>
+                <li>
+                    <img src="images/학교03.jpg" alt="">
+                    <a href="" class="arrow"><img src="images/bx_loader.gif" alt=""></a>
+                </li>
+                <li>
+                    <ul class="slider2">
+                        <li class="conWrap">
+                            <img src="images/도서관+학생png.png" alt="">
+                        </li>
+                        <li class="conWrap">
+                            <img src="images/도서관+학생png.png" alt="">
+                        </li> <li class="conWrap">
+                            <img src="images/도서관+학생png.png" alt="">
+                        </li> <li class="conWrap">
+                            <img src="images/도서관+학생png.png" alt="">
+                        </li>
+                    </ul>
+                </li>
             </ul>
         </div>
     </section>
