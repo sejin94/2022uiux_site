@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bxslider</title>
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        .bx_wrapper{
+            -moz-box-shadow: 0 0 0 #fff  ;
+            -webkit-box-shadow: 0 0 0 #fff ;
+            box-shadow: 0 0 0 #fff ;
+            border: 0 ;
+            margin-bottom: 0;
+            
+        }
+        .sliderWrap .bx-wrapper .bx-pager{bottom: 30px;}
+        .sliderWrap1 .bx-wrapper .bx-pager{
+            background: pink;bottom: 400px;
+            width: 250px;right: 0;
+        }
+        .bx-wrapper .bx-pager.bx-default-pager a{
+            background-color: pink;
+            width: 50px;height: 20px;
+            border-radius: 10px;transition: 0.3s;
+        }
+        .bx-wrapper .bx-pager.bx-default-pager a:active{
+            background-color: red;
+            width: 20px;height: 20px;
+        }
+        .bx-wrapper .bx-pager.bx-default-pager a:hover{}
+
+        .sliderWrap{width: 900px;height: 450px;}
+
+        .nextBtn,.preBtn,.nextBtn1,.preBtn1 {position: absolute;top: 50%;}
+        
+        .txt{position: absolute;top: 30px;left: 30px;}
+
+
+    </style>
+
+
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script>
+
+        $(document).ready(function(){
+            // slide
+            var slide = $(".slider").bxSlider({
+                mode:'vertical',
+                auto: true,
+                controls:false
+            });
+
+            $(".nextBtn").click(function(){
+                slide.goToNextSlide();
+            })
+            $(".preBtn").click(function(){
+                slide.goToPrevSlide();
+            })
+
+            //slide1
+            var slide = $(".slider1").bxSlider({
+                auto: true,
+                controls:false
+            });
+
+            $(".nextBtn1").click(function(){
+                slide.goToNextSlide();
+            })
+            $(".preBtn1").click(function(){
+                slide.goToPrevSlide();
+            })
+
+        }); // ready
+    </script>
+</head>
+<body>
+    <div class="sliderWrap">
+        <ul class="slider">
+            <li><a href="#">
+                <img src="images/slideImg01.png" alt="">
+                <div class="txt">
+                    <h3>lorem</h3>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </a></li>
+            <li><a href="#"><img src="images/slideImg02.png" alt=""></a></li>
+            <li><a href="#"><img src="images/slideImg01.png" alt=""></a></li>
+            <li><a href="#"><img src="images/slideImg02.png" alt=""></a></li>
+        </ul>
+        <div class="nextBtn"><img src="images/arrow02.png" alt=""></div>
+        <div class="preBtn"><img src="images/arrow01.png" alt=""></div>
+    </div>
+
+    <div class="sliderWrap1">
+        <ul class="slider1">
+            <li><a href="#"><img src="images/slideImg01.png" alt=""></a></li>
+            <li><a href="#"><img src="images/slideImg02.png" alt=""></a></li>
+            <li><a href="#"><img src="images/slideImg01.png" alt=""></a></li>
+            <li><a href="#"><img src="images/slideImg02.png" alt=""></a></li>
+        </ul>
+        <div class="nextBtn1"><img src="images/arrow02.png" alt=""></div>
+        <div class="preBtn1"><img src="images/arrow01.png" alt=""></div>
+    </div>
+</body>
+</html>

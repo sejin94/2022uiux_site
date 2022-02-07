@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,body{height: 100%;}
+        *{margin: 0;padding: 0;}
+        a:link,a:visited{color: #000;text-decoration: none;}
+        .clearfix:after{content:"";display: block;clear:both;}
+        li{list-style: none;}
+
+        body{background-image: url(position02.jpg);background-repeat: no-repeat;}
+
+        .boxwrap{
+            width: 400px;height: 150px;background: #eaeaea;
+            border: 1px solid #000;
+            position: relative;
+            margin-top: 100px; margin-left: 1000px;
+        }
+        .boxwrap>div{
+            width: 200px;
+            height: 50px;
+            position: absolute;
+            background: #5eb1ff;}
+
+        .boxwrap>.box1{top: 10px;left: 10px;}
+        .boxwrap>.box2{right: 0;top: 10px;width: 100px;}
+        .boxwrap>.box3{bottom: 10px;left: 10px;width: 380px;}
+
+    </style>
+
+</head>
+<body>
+    <div class="boxwrap">
+        <div class="box1">왼쪽위</div>
+        <div class="box2">오른쪽위</div>
+        <div class="box3">아래</div>
+    </div>
+    
+</body>
+</html>

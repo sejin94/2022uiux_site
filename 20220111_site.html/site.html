@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{margin: 0;padding: 0;}
+        li{list-style: none;}
+        .clearfix:after{content:"";display: block;clear:both;}
+        a:link,a:visited{color: black;text-decoration:none;}
+
+
+        div.util_wrapper{_background-color: pink;width: 1900px;margin: 0 auto;height: 120px;}
+        div.util_wrapper>div.logo_wrapper{_background: blue;float: left;margin: 30px 50px;}
+        div.util_wrapper>ul.nav{float:right;_background-color: red;margin: 30px;}
+        div.util_wrapper>ul.nav>li{float:left;}
+        div.util_wrapper>ul.nav>li>a{display: block;text-align: center;line-height: 45px;width: 140px;font-weight: bold;}
+        div.util_wrapper>ul.nav>li>a:hover{background-color: black;color:purple}
+
+        .wall{height: 1px;background: #000;:grey;}
+
+        div.content{height: 3800px;background-color: pink;}
+
+
+        div.footer{display: block;background-color: red;}
+
+
+
+
+        
+
+
+    </style>
+</head>
+<body>
+
+    <div id="header" class="util_wrapper clearfix">
+        <div class="logo_wrapper">
+            <h1 class="logo"><a href="#">CJ도너스캠프</a></h1>
+        </div>
+
+        <ul class="nav">
+            <li><a href="#">프로그램</a></li>
+            <li><a href="#">기부</a></li>
+            <li><a href="#">소식</a></li>
+            <li><a href="#">소개</a></li>
+        </ul>
+
+    </div>
+    <div class="wall"></div>
+    <div class="content"></div>
+
+    <div class="footer">dd</div>
+
+    
+</body>
+</html>

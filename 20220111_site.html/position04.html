@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        html,body{height: 100%;}
+            *{margin: 0;padding: 0;box-sizing:border-box;}
+            li{list-style: none;}
+            a:link,a:visited{color: black;text-decoration: none;}
+            .clearfix:after{content:"";display: block;clear:both;}
+        body{
+            background-image: url(position02.jpg);background-repeat: no-repeat;
+        }
+
+        .boxwrap{
+            width: 400px;
+            height: 150px;
+            _background: #eaeaea;
+            border: 1px solid #000;
+            margin-top: 100px;
+            position: relative;
+            /* position: relative;
+            top:100px; */
+        
+        }
+        
+        .boxwrap>div{
+            width: 100px;height: 50px;
+            position: absolute;
+            background: #5eb1ff;
+        }
+        .boxwrap>.box1{
+            width: 200px;
+            top: 10px;left: 10px;
+        }
+        .boxwrap>.box2{
+            right: 10px;top: 10px;
+        }
+        .boxwrap>.box3{
+            width: 380px;
+            bottom: 10px;left: 10px;
+        }
+        .testbox{
+            background: skyblue;
+            position: absolute;
+            width: 200px;height: 200px;
+            top: 500px;left: 300px;
+        }
+
+        .boxwrap1{
+            width: 400px;height: 150px;
+            background: pink;
+            position: relative;
+            padding: 10px;
+        }
+        .boxwrap1>.box1{
+            width: 200px;height: 50px;
+            background: red; 
+        }
+        .boxwrap1>.box2{
+            width: 100px;height: 50px;
+            background: red;
+            position: absolute;right: 10px;top: 10px;
+        }
+        .boxwrap1>.box3{
+        width: 380px;height: 50px;
+        background-color: red;position: absolute;
+        bottom: 10px; 
+        }
+</style>
+
+
+</head>
+<body>
+        <div class="boxwrap">
+            <div class="box1"></div>
+            <div class="box2"></div>
+            <div class="box3"></div>
+        </div>    
+
+        <div class="testbox">test</div>
+
+        <div class="boxwrap1">
+            <div class="box1"></div>
+            <div class="box2"></div>
+            <div class="box3">111</div>
+        </div>
+
+        <div class="boxwrap1">
+            <div class="box1"></div>
+            <div class="box2"></div>
+            <div class="box3">111</div>
+        </div>
+</body>
+</html>
