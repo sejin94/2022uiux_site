@@ -43,13 +43,20 @@
         .utilMenu .size{display: flex;margin: 13px 0;}
         .utilMenu .size a{background: white;display: block;margin: 0 1px;color:#6A6A6A;font-weight: bold;padding: 0 3px;line-height: 12px;text-align: center;font-size: 12px;}
         
-        .logoWrap{width: 1200px;margin: 0 auto;display: flex;justify-content: space-between;height:120px;}
+        .logoWrap{width: 1200px;margin: 0 auto;}
+        .logoWrap .logo{float: left;margin: 30px 0;}
+        .logoWrap .logoMenu{float: right;margin: 30px 0;}
+        .logoWrap .logoMenu>ul>li{float: left;margin: 20px;font-size: 18px;}
+        .logoWrap .logoMenu>ul>li>a>img{display: block;width: 60px;}
+
+        /* .logoWrap{width: 1200px;margin: 0 auto;display: flex;justify-content: space-between;height:120px;}
         .logo{background: red;}
         .logo>a{background: pink;height: 100%}
         .logo>a>img{display: block;}
         .logoWrap ul{display: flex;justify-content: center;align-items: center;}
         .logoWrap ul li{margin-right: 30px;background: red;}
-        .logoWrap a{display: flex;justify-content: center;align-items: center;padding: 20px;}
+        .logoWrap a{display: flex;justify-content: center;align-items: center;padding: 20px;} */
+
         
         
 
@@ -180,9 +187,26 @@
         .contentWrap>ul>li:nth-child(8) ul>li>h2{top: 20px;font-size: 30px;left: 50px;}
         .contentWrap>ul>li:nth-child(8) ul>li>h1{top: 60px;font-size: 60px;left: 50px;}
         .contentWrap>ul>li:nth-child(8) ul>li>a{
-            top: 170px;left: 50px;display: block;background-color: rgba(0,0,0,0.5);
-            height: 40px;line-height: 40px;text-align: center;width: 150px;
+            top: 170px;left: 50px;display: block;background-color: rgba(243, 162, 1, 0.7);
+            height: 40px;line-height: 40px;text-align: center;width: 150px;color: white;
         }
+
+    /* footer  */
+        .footerWrap{width: 1200px;margin: 0 auto;}
+        .footerWrap>div{float: left;width: 25%;margin-top: 20px;padding: 10px 50px;}
+        .footerWrap>ul{float: right;margin-top: 20px;width: 75%;}
+        .footerWrap>ul>li{float: left;padding: 0 5px;font-size: 14px;}
+        .footerWrap>ul>li:first-child{padding: 0 5px 0 0;}
+        .footerWrap>ul>li:after{
+            content:"";
+            width: 1px;height: 13px;
+            display: block;background: #ccc;
+            position: absolute;margin-top: -14px;margin-left: -5px;
+        }
+        .footerWrap>ul>p{float: left;font-size:10px}
+        .footerWrap>ul>li:first-child:after{content:"";display: none;}
+        
+
 
       
       
@@ -239,12 +263,12 @@
                 </div>
             </div>
         </div>
-        <div class="logoWrap">
+        <div class="logoWrap clearfix">
             <div class="logo">
                 <a href="#"><img src="images/부천대.png" alt=""></a>
                
             </div>
-            <div class="logoMenu">
+            <div class="logoMenu clearfix">
                 <ul>
                     <li><a href="#">대학소개</a></li>
                     <li><a href="#">학과소개</a></li>
@@ -293,6 +317,7 @@
             
 
         </div>
+
         <div class="container contentWrap">
             <ul class="clearfix">
                 <li>
@@ -432,6 +457,30 @@
                 </li>
             </ul>
         </div>
+
     </section>
+
+    <footer>
+       <div class="footerWrap clearfix">
+           <div><a href="#"><img src="images/부천대.png" alt=""></a></div>
+           <ul>
+               <li><a href="">개인정보처리방침</a></li>
+               <li><a href="">침해행위금지</a></li>
+               <li><a href="">입찰</a></li>
+               <li><a href="">예결산공고</a></li>
+               <li><a href="">대학정보공시</a></li>
+               <li><a href="">개인정보공시</a></li>
+               <li><a href="">대학자체평가</a></li>
+               <li><a href="">한길학원</a></li>
+               <p>
+               <br>본캠퍼스 : (우14632) 경기도 부천시 신흥로 56번길 25
+               <br>소사캠퍼스 : (우14774) 경기도 부천시 소사로 56
+               <br>Tel : 032-610-0114 <span>/</span> Fax : 032-663-0114
+               <br>COPYRIGHT© 2015 Bucheon University. All Rights Reserved.
+                </p>
+            
+            </ul>
+       </div> 
+    </footer>
 </body>
 </html>
