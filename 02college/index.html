@@ -6,211 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/jquery.bxslider.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
     <link rel="stylesheet" href="css/colorbox.css">
+    
 
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/jquery.bxslider.js"></script>
     <script src="js/jquery.colorbox-min.js"></script>
-    <style>
-        .body{min-width: 1200px;}
-        .topNavWrap{background: #0044AF}
-        .navTop{
-            width: 1200px;margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-        
-        }
-        .nav ul{display: flex;height: 40px;}
-        .nav ul li{background: #00163B;margin-right:5px;}
-        .nav ul li a{color:white}
-        .nav ul li:first-child{background: white;}
-        .nav ul li:first-child a{color: #6A6A6A;}
-        
-        .nav a{
-            display: flex;justify-content: center;align-items: center;
-            height: 100%;padding: 0 20px;
-        }
-
-        .utilMenu ul{display: flex;height: 40px;}
-        
-        .utilMenu a{
-            display: flex;justify-content: center;align-items: center;
-            height: 100%;padding: 0 10px ;font-size: 12px;
-            color:white;
-        }
-        .utilMenu .size{display: flex;margin: 13px 0;}
-        .utilMenu .size a{background: white;display: block;margin: 0 1px;color:#6A6A6A;font-weight: bold;padding: 0 3px;line-height: 12px;text-align: center;font-size: 12px;}
-        
-        .logoWrap{width: 1200px;margin: 0 auto;}
-        .logoWrap .logo{float: left;margin: 30px 0;}
-        .logoWrap .logoMenu{float: right;margin: 30px 0;}
-        .logoWrap .logoMenu>ul>li{float: left;margin: 20px;font-size: 18px;}
-        .logoWrap .logoMenu>ul>li>a>img{display: block;width: 60px;}
-
-        /* .logoWrap{width: 1200px;margin: 0 auto;display: flex;justify-content: space-between;height:120px;}
-        .logo{background: red;}
-        .logo>a{background: pink;height: 100%}
-        .logo>a>img{display: block;}
-        .logoWrap ul{display: flex;justify-content: center;align-items: center;}
-        .logoWrap ul li{margin-right: 30px;background: red;}
-        .logoWrap a{display: flex;justify-content: center;align-items: center;padding: 20px;} */
-
-        
-        
-
-        header{height: 160px;}
-        section.section{
-            background: skyblue;
-            background-image: url(images/dot.png),url(images/main_bg1.jpg);
-            background-repeat: repeat,no-repeat;
-            background-position: center;
-            background-size: auto,cover;
-            padding:70px 0;
-        }
-        .container{width: 1200px;margin: 0 auto;}
-        .titleWrap{display: flex;justify-content: space-between;height: 140px;;align-items: center;margin-bottom: 30px;color:white}
-        .titleWrap .title{font-size: 40px;margin-bottom: 80px;}
-        .titleWrap .title>h2{font-size: 60px;}
-        .secBannerWrap>ul{display: flex;width: 420px;height: 140px;justify-content: center;align-items: center;}
-        .secBannerWrap>ul>li {width: 25%;display: flex;justify-content: center;align-items: center;}
-        .secBannerWrap>ul>li>a {font-size:13px;text-align: center;line-height: 15px;color:#fff;}
-        .secBannerWrap>ul>li>a>img{margin-bottom: 10px;}
-
-        /* section */
-        .contentWrap>ul>li{
-            float: left;width: 25%;height: 225px;position: relative;
-        }
-        
-        .contentWrap>ul>li:nth-child(1){
-            width: 75%;height: 450px;position: relative;
-        }
-        .contentWrap>ul>li:nth-child(2){
-            height: 450px;overflow: hidden;
-        }
-        .contentWrap>ul>li:nth-child(8){
-            width: 75%;
-        }
-        .contentWrap>ul>li:nth-child(1){background-color: aqua;}
-        .contentWrap>ul>li:nth-child(2){background-color: skyblue;}
-        .contentWrap>ul>li:nth-child(3){background-color: darkcyan;}
-        .contentWrap>ul>li:nth-child(4){background-color: darkmagenta;}
-        .contentWrap>ul>li:nth-child(5){background-color: red;}
-        .contentWrap>ul>li:nth-child(6){background-color: yellowgreen;}
-        .contentWrap>ul>li:nth-child(7){background-color: violet;}
-        .contentWrap>ul>li:nth-child(8){background-color: #fff;}
-
-        .contentWrap>ul>li:nth-child(1) .bx-wrapper {
-            -moz-box-shadow: 0 0 0 transparent;
-            -webkit-box-shadow: 0 0 0 transparent;
-            box-shadow: 0 0 0 transparent;
-            border: 0 none;
-            margin-bottom: 0; 
-        }
-        .contentWrap>ul>li:nth-child(1) .bx-wrapper .bx-pager{
-            bottom: 30px;
-        }
-
-        .contentWrap>ul>li:nth-child(1) .next,
-        .contentWrap>ul>li:nth-child(1) .prev{
-            position: absolute;top: 50%;
-            transform: translateY(-50%);
-            cursor:pointer;
-        }
-        .contentWrap>ul>li:nth-child(1) .next{right: 0;}
-        .contentWrap>ul>li:nth-child(1) .prev{left: 0;}
-
-        .contentWrap>ul>li:nth-child(1) .txt{position: absolute;top: 20%;
-            left: 10%;font-size:60px;color:#1651b6}
-        
-        .contentWrap>ul>li:nth-child(1) .btn{position: absolute;top: 75%;left: 10%;
-            display: block;background: #192d4e;width: 150px;
-            height: 40px;line-height: 40px;
-            text-align: center;color:white;}
-        
-        .contentWrap>ul>li:nth-child(2) img{}
-        .contentWrap>ul>li:nth-child(2) .content2_body1{position:absolute;top: 20%;left: 10%;font-size: 30px;color: white;}
-        .contentWrap>ul>li:nth-child(2) .content2_body2{position:absolute;top: 50%;left: 10%;color: white;}
-        .contentWrap>ul>li:nth-child(2) .content2_body3{position:absolute;top: 75%;left: 10%;
-        display: block;width: 150px;height: 40px;line-height: 40px;
-        text-align: center;color:white;border: 1px solid #fff;background-color:rgba(0,0,0,0.4);}
-        
-        
-        .contentWrap>ul>li:nth-child(3) .content3{background: #00163B;height: 100%;}
-        .contentWrap>ul>li:nth-child(3) .content3Top{margin: 0 20px;padding: 20px 0;font-size: 18px;font-weight: bold;color:white}
-        .contentWrap>ul>li:nth-child(3) .content3_bodywrap>ul{
-            display: flex;justify-content:space-between;align-items: center;
-            width: 100%;padding: 10px 30px;text-align: center;font-size: 10px;line-height: 20px;
-        }
-        .contentWrap>ul>li:nth-child(3) .content3_bodywrap>ul>li a{color:white;}
-       
-        .contentWrap>ul>li:nth-child(4) .content4{background: #1651B7;height: 100%;}
-        .contentWrap>ul>li:nth-child(4) .content4Top{margin: 0 20px;;padding: 20px 0;font-size: 18px;font-weight: bold;color: white;border-bottom: 3px solid white;}
-        .contentWrap>ul>li:nth-child(4) ul{padding: 0 25px;}
-        .contentWrap>ul>li:nth-child(4) ul>li{padding: 5px 0px;list-style: initial;color: white;}
-        .contentWrap>ul>li:nth-child(4) ul>li>a{font-size: 12px;color: white;}
-        .contentWrap>ul>li:nth-child(4) ul>li>a>span{float: right;}
-
-        .contentWrap>ul>li:nth-child(5) .content5{background: white;height: 100%;}
-        .contentWrap>ul>li:nth-child(5) .content5Top{margin: 0 20px;;padding: 20px 0px;font-size: 18px;font-weight: bold;color:#00173C;}
-        .contentWrap>ul>li:nth-child(5) ul{display: flex;justify-content: center;align-items: center;}
-        .contentWrap>ul>li:nth-child(5) ul>li{ padding: 5px 10px;}  
-        .contentWrap>ul>li:nth-child(5) ul>li>img{display: block;}
-
-        .contentWrap>ul>li:nth-child(5) ul>li>a{font-size: 14px;}
-        .contentWrap>ul>li:nth-child(5) .Logo{float: right;}
-        .contentWrap>ul>li:nth-child(5) .Logo>a>img{display: block;float: left;}
-        .contentWrap>ul>li:nth-child(5) .Logo>a:nth-child(4){margin-right: 15px;}
-
-        .contentWrap>ul>li:nth-child(6) img{max-width: 100%;height: 100%;}
-        .contentWrap>ul>li:nth-child(6) .banner{position: absolute;bottom: 0;left: 50%;transform: translateX(-50%);
-        display: block;background-color:rgba(0,0,0,0.5);width: 100%;text-align: center;height: 20%;line-height: 40px;
-        color:white;
-        }
-
-        .contentWrap>ul>li:nth-child(7) img{width: 100%;height: 100%;}
-        .contentWrap>ul>li:nth-child(7) a{position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);}
-
-        .contentWrap>ul>li:nth-child(8) {overflow: hidden;}
-        .contentWrap>ul>li:nth-child(8) .bx-wrapper {
-            -moz-box-shadow: 0 0 0 transparent;
-            -webkit-box-shadow: 0 0 0 transparent;
-            box-shadow: 0 0 0 transparent;
-            border: 0 none;
-            margin-bottom: 0; 
-        }
-        .contentWrap>ul>li:nth-child(8) .bx-wrapper .bx-pager{
-            top: 0;left: 380px;
-        }
-        .contentWrap>ul>li:nth-child(8) ul>li>a,h2,h1{position: absolute;}
-        .contentWrap>ul>li:nth-child(8) ul>li>h2{top: 20px;font-size: 30px;left: 50px;}
-        .contentWrap>ul>li:nth-child(8) ul>li>h1{top: 60px;font-size: 60px;left: 50px;}
-        .contentWrap>ul>li:nth-child(8) ul>li>a{
-            top: 170px;left: 50px;display: block;background-color: rgba(243, 162, 1, 0.7);
-            height: 40px;line-height: 40px;text-align: center;width: 150px;color: white;
-        }
-
-    /* footer  */
-        .footerWrap{width: 1200px;margin: 0 auto;}
-        .footerWrap>div{float: left;width: 25%;margin-top: 20px;padding: 10px 50px;}
-        .footerWrap>ul{float: right;margin-top: 20px;width: 75%;}
-        .footerWrap>ul>li{float: left;padding: 0 5px;font-size: 14px;}
-        .footerWrap>ul>li:first-child{padding: 0 5px 0 0;}
-        .footerWrap>ul>li:after{
-            content:"";
-            width: 1px;height: 13px;
-            display: block;background: #ccc;
-            position: absolute;margin-top: -14px;margin-left: -5px;
-        }
-        .footerWrap>ul>p{float: left;font-size:10px}
-        .footerWrap>ul>li:first-child:after{content:"";display: none;}
-        
-
-
-      
-      
- </style>
+   
  <script>
     $(document).ready(function(){
        var myslider1 = $(".slider").bxSlider({
@@ -324,23 +128,42 @@
                     <!-- size 900*450 -->
                     <ul class="slider">
                         <li class="conWrap">
-                            <a href="#"><div class="btn">자세히보기 ▶</div></a>
-                            <h1 class="txt">부천에서 <br>시작하는<br>새로운 꿈</h1>
                             <img src="images/slide01.png" alt="">
+                            <div class="txt">
+                                <p>
+                                    <b>부천</b>에서<br>
+                                    <b>시작</b>하는<br>
+                                    새로운<b> 꿈</b><br>
+                                </p>
+                                <a href="#">자세히보기  ▶</a>
+                            </div>
+                            
                             
                             
                             
                         </li>
                         <li class="conWrap">
-                            <a href="#"><div class="btn">자세히보기 ▶</div></a>
-                            <h1 class="txt">부천에서 <br>시작하는<br>새로운 꿈</h1>
                             <img src="images/slide02.png" alt="">
+                            <div class="txt">
+                                <p>
+                                    <b>부천</b>에서<br>
+                                    <b>시작</b>하는<br>
+                                    새로운<b> 꿈</b><br>
+                                </p>
+                                <a href="#">자세히보기  ▶</a>
+                            </div>
                             
                         </li>
                         <li class="conWrap">
-                            <a href="#"><div class="btn">자세히보기 ▶</div></a>
-                            <h1 class="txt">부천에서 <br>시작하는<br>새로운 꿈</h1>
                             <img src="images/slide03.png" alt="">
+                            <div class="txt">
+                                <p>
+                                    <b>부천</b>에서<br>
+                                    <b>시작</b>하는<br>
+                                    새로운<b> 꿈</b><br>
+                                </p>
+                                <a href="#">자세히보기  ▶</a>
+                            </div>
                             
                         </li>
                     </ul>
@@ -353,18 +176,32 @@
 
                 </li>
                 <li class="content2">
-                    <img src="images/배경03 2 (1).png" alt="">
-                    <ul class="content2_body">
+                    <img src="images/background2.png" alt="">
+                    <div class="txt2">
+                        <p>
+                            <b>APP</b>으로<br>
+                            <b>스마트 도서관</b><br>
+                            바로이용하자!
+                        </p>
+                        <p class="txt3">
+                            모바일 열람증은<br>
+                            도서관 자료실/도서대출 등에<br>
+                            사용 할 수 있습니다.
+                        </p>
+                        <a href="#">자세히보기  ▶</a>
+
+                    </div>
+                    <!-- <ul class="content2_body">
                         <li class="content2_body1">APP으로<br>스마트 도서관<br>바로이용하자!</li>
                         <li class="content2_body2">모바일 열람증은<br>도서관 자료실/도서대출 등에<br>사용 할 수 있습니다.</li>
                         <a class="content2_body3" href="#">자세히보기 ▶</a>
                         
                         
-                    </ul>
+                    </ul> -->
                 </li>
                 <li>
                     <div class="content3">
-                        <div class="content3Top">HOT LINK</div> 
+                        <h3 class="content3Top">HOT LINK</h3> 
                         <div class="content3_bodywrap">
                             <ul>
                                 <li>
@@ -392,7 +229,7 @@
                 </li>
                 <li>
                     <div class="content4">
-                        <div class="content4Top">공지사항</div>
+                        <h3 class="content4Top">공지사항</h3>
                         <ul>
                             <li><a href="">[공지]부천대학교 웹진...   <span>2021-06-12</span></a></li>
                             <li><a href="">[보도]우수대학교 선정 수상 <span>2021-06-17</span></a></li>
@@ -403,7 +240,7 @@
                 </li>
                 <li>
                     <div class="content5">
-                        <div class="content5Top">SNS NEWS</div>
+                        <h3 class="content5Top">SNS NEWS</h3>
                         <ul><li><img src="images/학교01.jpg" alt=""></li>
                             <li><a href="">
                                 부천 대학교는<br>21학년도 신입생<br>입학식을 3월 2일(목)
@@ -472,12 +309,12 @@
                <li><a href="">개인정보공시</a></li>
                <li><a href="">대학자체평가</a></li>
                <li><a href="">한길학원</a></li>
-               <p>
+                <address>
                <br>본캠퍼스 : (우14632) 경기도 부천시 신흥로 56번길 25
                <br>소사캠퍼스 : (우14774) 경기도 부천시 소사로 56
                <br>Tel : 032-610-0114 <span>/</span> Fax : 032-663-0114
                <br>COPYRIGHT© 2015 Bucheon University. All Rights Reserved.
-                </p>
+                </address>    
             
             </ul>
        </div> 
