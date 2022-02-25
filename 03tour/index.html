@@ -15,25 +15,31 @@
 
 <script>
     $(document).ready(function(){
-        // var myslider = $(".slider").bxSlider({
-        //         controls:false,
-        //         pagerCustom:".boxPager",
-        //         auto:true,
-        //         mode:"vertical"
-        //     });
+        var myslider = $(".slider").bxSlider({
+                controls:false,
+                pagerCustom:".boxPager",
+                mode:"vertical",
+                touchEnabled:false
+            });
         
         var myslider2 = $(".slider2").bxSlider({
                 controls:false,
-                auto:true
-                
+            });
+        var myslider3 = $(".slider3").bxSlider({
+                controls:false,
             });
         
-            
-        $(".next").click(function(){
+        $(".next2").click(function(){
             myslider2.goToNextSlide();
         });
-        $(".prev").click(function(){
-            myslider2.goToPrevtSlide();
+        $(".prev2").click(function(){
+            myslider2.goToPrevSlide();
+        });
+        $(".next3").click(function(){
+            myslider3.goToNextSlide();
+        });
+        $(".prev3").click(function(){
+            myslider3.goToPrevSlide();
         });
 
     });
@@ -78,16 +84,18 @@
             </div>
         </div>
     </header>
-    <section>
+    <section class="bg">
+        <img src="images/img1.png" alt="" class="img01">
+        <img src="images/img2.png" alt="" class="img02">
         <div class="content1Wrap">
             <div class="content1">
                 <div class="content1-1 clearfix"> 
                     <div class="sliderPager">
                         <ul class="boxPager">
-                            <li><i class="fa-solid fa-plane"></i>공항예약</li>
-                            <li><i class="fa-solid fa-hotel"></i>호텔예약</li>
-                            <li><i class="fa-solid fa-car-side"></i>렌트카</li>
-                            <li><i class="fa-solid fa-suitcase-rolling"></i>휴양지</li>
+                            <li><a href="#" data-slide-index="0"><i class="fa-solid fa-plane"></i>공항예약</a></li>
+                            <li><a href="#" data-slide-index="1"><i class="fa-solid fa-hotel"></i>호텔예약</a></li>
+                            <li><a href="#" data-slide-index="2"><i class="fa-solid fa-car-side"></i>렌트카</a></li>
+                            <li><a href="#" data-slide-index="3"><i class="fa-solid fa-suitcase-rolling"></i>휴양지</a></li>
                         </ul>
                     </div>                                                                      
                     <div class="formWrap">
@@ -352,15 +360,15 @@
                             </div>
                         </li>
                     </ul>
-                    <div class="prev">
+                    <div class="prev2">
                         <img src="images/arrow01.png" alt="">
                     </div>
-                    <div class="next">
+                    <div class="next2">
                         <img src="images/arrow02.png" alt="">
                     </div>
                 </li>
                 <li>
-                    <ul class="slider2">
+                    <ul class="slider3">
                         <li class="sLi">
                             <img src="images/content6.jpg" alt="">
                             <div class="card">
@@ -383,17 +391,13 @@
                             </div>
                         </li>
                     </ul>
-                    <div class="prev">
+                    <div class="prev3">
                         <img src="images/arrow01.png" alt="">
                     </div>
-                    <div class="next">
+                    <div class="next3">
                         <img src="images/arrow02.png" alt="">
                     </div>
-                    <!-- <img src="images/content6.jpg" alt="">
-                    <div class="card">
-                        <p>관광명소(디즈니랜드)</p>
-                        <img src="images/star1.jpg" alt="">
-                    </div> -->
+                    
                 </li>
                 <li>
                     <img src="images/content7.jpg" alt="">
@@ -406,7 +410,7 @@
                 <li>
                     <img src="images/content8.jpg" alt="">
                     <div class="card">
-                        <p>facebookc여행후기</p>
+                        <p>facebook여행후기</p>
                         <span>(이세진님)</span>
                     </div>
                     <p class="review">"해외여행은 처음이었는데,<br>웹투어여행 덕분에 무사히<br>다녀올 수 있었어요."</p>
