@@ -1,4 +1,9 @@
 $(document).ready(function(){
+
+    $(".slider").bxSlider();
+
+
+
     $(".lang div").click(function(){
         let i = $(this).index();
         $(".lang div").removeClass("active");
@@ -23,5 +28,45 @@ $(document).ready(function(){
                 <li><a href="#">인재채용</a></li>
             `)
         }
-    }) // lang
+    }); // lang
+
+    $(window).scroll(function(){
+        let scrollY = window.pageYOffset;
+        console.log(scrollY)
+
+        if (scrollY > 200){
+            $("#header").addClass("fixed");
+        }else{
+            $("#header").removeClass("fixed")
+        }
+
+    });
+
+    const $toElem = $(".toggle");
+    let chk = true;
+
+    $toElem.click(function(){
+        console.log("click")
+
+        if (chk == true) {
+            $(this).addClass("active");
+            $(".navbar").css({left: 0})
+            $(".lang").css("display","flex");
+            chk = false;   
+
+        }else{
+            $(this).removeClass("active");
+            $(".navbar").css({left: "-100%"})
+            $(".lang").hide();
+            chk = true;   
+        }
+    })
+    $(window).resize(function () {
+        $(".toggle").removeClass("active");
+        $(".navbar").removeAttr("style");
+        $(".lang").removeAttr("style");
+        
+    })
+
+
 })

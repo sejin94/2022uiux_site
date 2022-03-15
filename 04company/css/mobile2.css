@@ -4,14 +4,46 @@
 
     /*header*/
     #header{top: 0;z-index: 99999;}
-    #header .lang{display: none;}
+    #header .lang{position: fixed;right: 16px;bottom: 16px;display: none;}
     #header .navbarWrap{
-        width: 100%;padding: 0 20px;
+        width: 100%;padding: 0 20px;display: block;
     }
     #header .navbar{
         position: fixed;margin: initial;
-        width: 100%;height: 100%;background: skyblue;
-        top: 0;left: 0;display: none;
+        width: 70%;height: 100%;background: #F43B00;
+        top: 0;left: -100%;transition: 0.3s;
+        display: flex;justify-content: center;align-items: center;
     }
-    #header .navbar ul{display: block;width: initial;}
+
+    #header .navbar ul{display: block;width: 80%;}
+    #header .navbar li{width: 100%;font-weight: bold;}
+    #header .navbar li:after{display: none;}
+    #header .navbar li a{color: white;font-size: 20px;}
+
+
+    .toggle{
+        display: block;position: fixed;top: 18px;right: 16px;
+        width: 24px;height: 24px;cursor: pointer;
+        display: flex;justify-content: center;align-items: center;z-index: 99999;
+    }
+    .toggle div{
+        width: 20px;height: 2px;background: #000;
+        position: absolute;transition: 0.3s;
+    }
+    .toggle .bar1{transform: translateY(-6px);}
+    .toggle .bar3{transform: translateY(6px);}
+
+    .toggle.active .bar1{transform: rotate(45deg) translateY(0);}
+    .toggle.active .bar2{opacity: 0;}
+    .toggle.active .bar3{transform: rotate(-45deg) translateY(0);}
+
+
+        /* visual  */
+    .visualWrap{height: 65vh;}
+    .visualWrap .sImg{height: 65vh;min-height: initial;}
+    .visualWrap .bx-wrapper .bx-pager{bottom: 10px;}
+    .visualWrap .txtBody{transform:translate(270px,-40px)}
+    .visualWrap .bx-controls{display: none;}
+
 }
+
