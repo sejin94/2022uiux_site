@@ -1,6 +1,20 @@
 $(document).ready(function(){
 
     $(".slider").bxSlider();
+    var myslider = $(".nSlider").bxSlider({
+        controls:false
+    });
+    $(".right").click(function(){
+        myslider.goToNextSlide();
+    });
+    $(".left").click(function(){
+        myslider.goToPrevSlide();
+    });
+    // $(".nSlider").bxSlider({
+    //     controls:false,
+    //     pagerCustom:".btnWrap"
+
+    // });
 
 
 
