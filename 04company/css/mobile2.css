@@ -67,3 +67,6 @@
     .contents .card img{width: 50%;}
     .contents .item img{width: 100%;}
 
+/* cotainer  */
+
+.container .section{width: 100%;padding: 0 16px;}
