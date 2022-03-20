@@ -14,8 +14,20 @@ $(document).ready(function(){
     //     controls:false,
     //     pagerCustom:".btnWrap"
 
-    // });
-
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        loop: true,
+        breakpoints: {
+          768: {
+            slidesPerView: 3,
+          },
+        },
+        navigation: {   
+            nextEl: ".sright",
+            prevEl: ".sleft",
+        },
+      });
+      
 
 
     $(".lang div").click(function(){

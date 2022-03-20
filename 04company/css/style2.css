@@ -123,12 +123,53 @@
 .container .section>p{text-align: center;font-size: 2em;margin-bottom: 40px;}
 .container .section ul{display: flex;justify-content: space-between;}
 
-.container .section .ban li{cursor: pointer;transition: 0.3s;}
+.container .section .ban li{
+    width: calc( (100% - 45px ) / 4);
+    cursor: pointer;transition: 0.3s;
+}
 .container .section .ban li:hover{transform: translate(-10px,-10px);}
 
 .container .cCard >img{display: block;margin: 0 auto;margin-bottom: 20px;}
 .container .cCard .cCard-body{text-align: center;}
 .container .cCard .cCard-body >h3{margin-bottom: 20px;}
+
+/* sContainer  */
+
+.sContainer{width: 1240px;margin: 0 auto;display: flex;}
+.sContainer .sns{background: #F43B00;position: relative;width: calc( 1240px / 4 );flex-shrink: 0;}
+.sContainer .sns .snsIcon{display: block;margin: 0 auto;padding: 20px 50px}
+.sContainer .sns .sns-body{padding: 0 50px;color: white;}
+.sContainer .sns .sns-body h3{text-align: center;margin-bottom: 20px;}
+.sContainer .sns .day{margin-top: 20px;}
+.sContainer .sns .sbtnWrap{
+    position: absolute;bottom: 30px;display: flex;
+    left: 150px;border: 1px solid #000;cursor: pointer
+}
+.sContainer .sns .sbtnWrap img{display: block;}
+.sContainer .sns .sbtnWrap .sleft{border-right: 1px solid #000;}
+
+.sContainer .swiperWrap{width: calc( 1240px * ( 3/4 ) );overflow: hidden;}
+.sContainer .swiperWrap ul{display: flex;}
+.sContainer .swiperWrap li.basic img{width: 100%;display: block;}
+.sContainer .swiperWrap li.basic p{height: 310px;padding: 10px 25px;background: #eee;}
+.sContainer .swiperWrap li.basic{position: relative;display: flex;flex-direction: column;width:calc( 100% / 3);}
+.sContainer .swiperWrap li.basic:after{
+    content: "";display: block;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent;
+    position: absolute;top: 50%;left: 50%;
+    transform: translateY(-20px);
+}
+
+.sContainer .swiperWrap li.basic.change img{order: 1;}
+.sContainer .swiperWrap li.basic.change p{order: 0;}
+.sContainer .swiperWrap li.basic.change:after{
+    transform: translateY(0px) rotate(180deg);
+}
+
+
+
 
 /* common  */
 .flex-none{display: block !important;}
