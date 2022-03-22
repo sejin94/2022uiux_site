@@ -24,7 +24,7 @@
 #header .lang .eng{
     width: 80px;height: 40px;display: flex;justify-content: center;align-items: center;
     border: 1px solid #F43B00;margin-left: -1px;background: #fff;
-    font-size: 14px;color: #F43B00;font-weight: bold;cursor: pointer;
+    font-size: 14px;color: #180803;font-weight: bold;cursor: pointer;
 }
 #header .lang .active{background: #F43B00;color:white}
 
@@ -196,11 +196,27 @@
         border-top: 1px solid gray;
     }
     .footer .ftxt p{padding: 20px;}
-    .footer .ftxt>ul>li{float: left;padding: 20px;}
+    .footer .ftxt>ul>li{float: left;padding: 20px;flex-direction: column;}
     .footer .ftxt .adress{font-size: 14px;}
     .footer select{padding: 10px 20px;}
     
-
+    /* sub  */
+    
+    .ssection .ssectionbg{
+        height: 50vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: 40px;
+    }
+    .ssection .brandtxt{
+        width: 1240px;margin: 0 auto;
+        display: flex;flex-direction: column;align-items: center;
+        
+    }
+    .ssection .brandtxt .locat{align-self: flex-end;}
+    .ssection img{width: 1240px;margin: 0 auto;display: block;}
+    .ssection .mb{display: none;}
 
 /* common  */
 .flex-none{display: block !important;}
