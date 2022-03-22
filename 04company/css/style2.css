@@ -170,6 +170,11 @@
     transform: translateY(0px) rotate(180deg);
 }
 
+.sContainer .swiperWrap .basic .heart{width: 100%;position: absolute;bottom: 30px;left: 20px;display: flex; }
+.sContainer .swiperWrap .basic .heart img{width: 25px;margin-right: 20px;}
+
+.sContainer .swiperWrap .change.basic .heart {width: 100%;position: absolute;bottom: 330px;left: 20px;display: flex; }
+
 /* banner  */
 
 .banner{width: 1240px;margin: 0 auto;margin-bottom: 60px;}
