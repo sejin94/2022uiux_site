@@ -173,7 +173,8 @@
 .sContainer .swiperWrap .basic .heart{width: 100%;position: absolute;bottom: 30px;left: 20px;display: flex; }
 .sContainer .swiperWrap .basic .heart img{width: 25px;margin-right: 20px;}
 
-.sContainer .swiperWrap .change.basic .heart {width: 100%;position: absolute;bottom: 330px;left: 20px;display: flex; }
+.sContainer .swiperWrap .basic.change .heart{width: 100%;position: absolute;bottom: 330px;left: 20px;display: flex; }
+.sContainer .swiperWrap .basic.change .heart img{order: 0;}
 
 /* banner  */
 
