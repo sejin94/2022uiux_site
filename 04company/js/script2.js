@@ -1,8 +1,9 @@
 $(document).ready(function(){
 
-    $(".slider").bxSlider();
+    $(".slider").bxSlider({auto:true});
     var myslider = $(".nSlider").bxSlider({
-        controls:false
+        controls:false,
+        auto:true
     });
     $(".right").click(function(){
         myslider.goToNextSlide();
@@ -13,6 +14,17 @@ $(document).ready(function(){
     // $(".nSlider").bxSlider({
     //     controls:false,
     //     pagerCustom:".btnWrap"
+    $(".modal").colorbox({
+        iframe:true,
+        innerWidth:1000,
+        innerHeight:562.5
+    });
+
+    $(".navbar > ul").hover(function(){
+        $(this).parent().addClass("view");
+    },function(){
+        $("navbar").removeClass("view")
+    });
 
     var swiper = new Swiper(".mySwiper", {
         slidesPerView: 1,
