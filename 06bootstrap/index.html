@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+          <div class="container">
+            <a class="navbar-brand" href="#"><img src="images/logo_head_on.svg" alt=""></a>
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">해상솔루션</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">에너지솔루션</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">제품</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">고객지원</a>
+                    </li>
+                    
+                </ul>
+                
+            </div>
+      </div>
+    </nav>
+    <div class="visualWrap">
+        <ul class="slider">
+            <li class="position-relative">
+                <img src="images/1382.jpg" alt="" class="img-fluid">
+                <div class="textWrap position-absolute top-50 start-50 translate-middle text-white text-center">
+                    <p>탄소중립</p>
+                    <h2>친환경 기술로 지구를 지킵니다</h2>
+                    <a href="#" class="btn bg-primary px-4 m-5">더보기</a>
+                </div> 
+            </li>
+            <li class="position-relative">
+                <img src="images/1395.jpg" alt="" class="img-fluid">
+                <div class="textWrap position-absolute top-50 start-50 translate-middle text-white text-center">
+                    <p>탄소중립</p>
+                    <h2>친환경 기술로 지구를 지킵니다</h2>
+                    <a href="#" class="btn bg-primary px-4 m-5">더보기</a>
+                </div> 
+            </li>
+            <li class="position-relative">
+                <img src="images/1394.jpg" alt="" class="img-fluid">
+                <div class="textWrap position-absolute top-50 start-50 translate-middle text-white text-center">
+                    <p>탄소중립</p>
+                    <h2>친환경 기술로 지구를 지킵니다</h2>
+                    <a href="#" class="btn bg-primary px-4 m-5">더보기</a>
+                </div> 
+            </li>
+            <li class="position-relative">
+                <img src="images/1387.jpg" alt="" class="img-fluid">
+                <div class="textWrap position-absolute top-50 start-50 translate-middle text-white text-center">
+                    <p>탄소중립</p>
+                    <h2>친환경 기술로 지구를 지킵니다</h2>
+                    <a href="#" class="btn bg-primary px-4 m-5">더보기</a>
+                </div> 
+            </li>
+        </ul>
+    </div>
+    <div class="container d-flex">
+        <div class="c1 position-relative">
+            <img src="images/main_energy.png" alt="">
+            <div class="ctext position-absolute bottom-0 p-5 text-white">
+                <h2>Marine Solution</h2>
+                <p>지속 가능한 해양 산업을 위한 친환경,디지털,고효울 솔루션</p>
+            </div>
+        </div>
+        <div class="c2 position-relative">
+            <img src="images/main_energy.png" alt="">
+            <div class="ctext position-absolute bottom-0 p-5 text-white">
+                <h2>Marine Solution</h2>
+                <p>지속 가능한 해양 산업을 위한 친환경,디지털,고효울 솔루션</p>
+            </div>
+        </div>
+       
+        
+
+    </div>
+    
+
+
+
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    
+    <script>
+        $(document).ready(function(){
+            $(".slider").bxSlider({auto:true});
+        });
+    </script>
+</body>
+</html>
