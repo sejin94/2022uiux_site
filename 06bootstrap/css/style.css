@@ -15,6 +15,16 @@
 
 .visualWrap .textWrap h2{font-size: 3vw;}
 .visualWrap .textWrap p{font-size: 1vw;}
+.row {
+    --bs-gutter-x: 0;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x));
+}
+
 
 .container1Wrap .container1 .c1:nth-child(2) .ctext{color:#02263e;}
 
