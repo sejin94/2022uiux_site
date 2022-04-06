@@ -5,3 +5,4 @@
 4. company https://sejin94.github.io/2022uiux_site/04company
 5. parallax https://sejin94.github.io/2022uiux_site/05parallax
 6. bootstrap https://sejin94.github.io/2022uiux_site/06bootstrap
+7. fullpage https://sejin94.github.io/2022uiux_site/07fullpage

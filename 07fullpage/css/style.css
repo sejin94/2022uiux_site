@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+
+
+.btn:hover{color: #fff;background: #ffc107;
+    border-color: #ffc107;}
+
+
+
+.videoWrap  #video{
+
+        object-fit: fill;
+        width: 100%;
+    }  
+    
+.mdotext{font-size: 50px;}
