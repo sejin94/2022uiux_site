@@ -17,13 +17,13 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
           <div class="container">
-            <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
+            <a class="navbar-brand" href="#"><img src="images/logo 1.png" alt="" class="imag-fluid"></a>
             <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
                 aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="collapsibleNavId">
-                <ul class="navbar-nav ms-auto mt-2 mt-lg-0 ">
+                <ul class="navbar-nav ms-auto mt-2 mt-lg-0 topMenu">
                     <li class="nav-item active px-5">
                         <a class="nav-link text-black" href="#m2st">Menu</a>
                     </li>
@@ -46,9 +46,9 @@
     </nav>
     <div id="fullpage">
         <div class="section page1 " data-anchor="m1st">
-                <div class="container-fluid ">
+                <div class="container-fluid">
                     <div class="row align-items-center">
-                        <div class="col-md-4 text-center">
+                        <div class="col-md-4 text-center mb-3 mb-md-0">
                             <h2 class="mdotext">맥도리아의 <br>바른 먹거리</h2>
                             <p>바른 먹거리를 위한 맥도리아의 노력을 소개합니다</p>
                             <a href="#!" class="btn btn-outline-warning">자세히 보기</a>
@@ -68,104 +68,151 @@
             <div class="container">
                 <h3 class="afterBar">메뉴소개</h3>
                 <p>주문 즉시 바로 조리해 더욱 맛있는, 맥도리아의 다양한 메뉴를 소개합니다.</p>
-                <div class="btn-group mb-3">
+                <!-- <div class="btn-group mb-3">
+                    <button class="btn btn-warning text-white active" data-filter="" id="btnAll">All</button>
                     <button class="btn btn-warning active text-white" data-filter=".burger">BURGER</button>
                     <button class="btn btn-warning text-white" data-filter=".morning">MORNING</button>
                     <button class="btn btn-warning text-white" data-filter=".side">SIDE</button>
                     <button class="btn btn-warning text-white" data-filter=".cafe">CAFE</button>
+                </div> -->
+
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <ul class="slidebox mx-5 mx-sm-0">
+                                <li><img src="images/BURGER1.png" alt="" class="mb-3 img-fluid"><p class="text-center">리코타치즈 버거</p></li>
+                                <li><img src="images/BURGER2.png" alt="" class="mb-3 img-fluid"><p class="text-center">더블 빅맥</p></li>
+                            </ul>
+                        </div>
+                        <div class="swiper-slide">
+                            <ul class="slidebox mx-5 mx-sm-0">
+                                <li><img src="images/BURGER3.png" alt="" class="mb-3 img-fluid"><p class="text-center">더블쿼터파운드</p></li>
+                                <li><img src="images/BURGER4.png" alt="" class="mb-3 img-fluid"><p class="text-center">빅맥</p></li>
+                            </ul>
+                        </div>
+                        <div class="swiper-slide">
+                            <ul class="slidebox mx-5 mx-sm-0">
+                                <li><img src="images/BURGER5.png" alt="" class="mb-3 img-fluid"><p class="text-center">상하이 버거</p></li>
+                                <li><img src="images/BURGER6.png" alt="" class="mb-3 img-fluid"><p class="text-center">베이컨토마토디럭스</p></li>
+                            </ul>
+                        </div>
+                        <div class="swiper-slide">
+                            <ul class="slidebox mx-5 mx-sm-0">
+                                <li><img src="images/BURGER7.png" alt="" class="mb-3 img-fluid"><p class="text-center">맥치킨 모짜렐라</p></li>
+                                <li><img src="images/BURGER8.png" alt="" class="mb-3 img-fluid"><p class="text-center">더블불고기 버거</p></li>
+                            </ul>
+                        </div>
+                        <div class="swiper-slide">
+                            <ul class="slidebox mx-5 mx-sm-0">
+                                <li><img src="images/BURGUER9.png" alt="" class="mb-3 img-fluid"><p class="text-center">불고기 버거</p></li>
+                                <li><img src="images/BURGER10.png" alt="" class="mb-3 img-fluid"><p class="text-center">쿼터파운드 버거</p></li>
+                            </ul>
+                        </div>
+                        <div class="swiper-slide">
+                            <ul class="slidebox mx-5 mx-sm-0">
+                                <li><img src="images/burger11.png" alt="" class="mb-3 img-fluid"><p class="text-center">더블필레오피쉬 버거</p></li>
+                                <li><img src="images/burger12.png" alt="" class="mb-3 img-fluid"><p class="text-center">필레오피쉬 버거</p></li>
+                            </ul>
+                        </div>
+                        <div class="swiper-slide">
+                            <ul class="slidebox mx-5 mx-sm-0">
+                                <li><img src="images/burger13.png" alt="" class="mb-3 img-fluid"><p class="text-center">더블필레오피쉬 버거</p></li>
+                                <li><img src="images/morning1.png" alt="" class="mb-3 img-fluid"><p class="text-center">필레오피쉬 버거</p></li>
+                            </ul>
+                        </div>
+                        <div class="swiper-slide">
+                            <ul class="slidebox mx-5 mx-sm-0">
+                                <li><img src="images/morning2.png" alt="" class="mb-3 img-fluid"><p class="text-center">더블필레오피쉬 버거</p></li>
+                                <li><img src="images/morning3.png" alt="" class="mb-3 img-fluid"><p class="text-center">필레오피쉬 버거</p></li>
+                            </ul>
+                        </div>
+                        <div class="swiper-slide">
+                            <ul class="slidebox mx-5 mx-sm-0">
+                                <li><img src="images/morning4.png" alt="" class="mb-3 img-fluid"><p class="text-center">더블필레오피쉬 버거</p></li>
+                                <li><img src="images/morning5.png" alt="" class="mb-3 img-fluid"><p class="text-center">필레오피쉬 버거</p></li>
+                            </ul>
+                        </div>
+                        <div class="swiper-slide">
+                            <ul class="slidebox mx-5 mx-sm-0">
+                                <li><img src="images/morning6.png" alt="" class="mb-3 img-fluid"><p class="text-center">더블필레오피쉬 버거</p></li>
+                                <li><img src="images/morning7.png" alt="" class="mb-3 img-fluid"><p class="text-center">필레오피쉬 버거</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                 </div>
-                <div class="row view ">
-                    <div class="col-6 col-lg-3 element-item burger mb-3">
-                        <img src="images/BURGER1.png" alt="" class="img-fluid rounded p-3">
-                        <p class="text-center">아라비아따 리코타 치즈버거</p>
-                    </div>
-                    <div class="col-6 col-lg-3 element-item morning mb-3">
-                        <img src="images/BURGER2.png" alt="" class="img-fluid rounded p-3">
-                        <p class="text-center">더블 빅맥</p>
-                    </div>
-                    <div class="col-6 col-lg-3 element-item burger mb-3">
-                        <img src="images/BURGER3.png" alt="" class="img-fluid rounded p-3">
-                        <p class="text-center">더블 빅맥</p>
-                    </div>
-                    <div class="col-6 col-lg-3 element-item morning mb-3">
-                        <img src="images/BURGER4.png" alt="" class="img-fluid rounded p-3">
-                        <p class="text-center">더블 빅맥</p>
-                    </div>
-                    <div class="col-6 col-lg-3 element-item burger mb-3">
-                        <img src="images/BURGER5.png" alt="" class="img-fluid rounded p-3">
-                        <p class="text-center">더블 빅맥</p>
-                    </div>
-                    <div class="col-6 col-lg-3 element-item morning mb-3">
-                        <img src="images/BURGER6.png" alt="" class="img-fluid rounded p-3">
-                        <p class="text-center">더블 빅맥</p>
-                    </div>
-                    <div class="col-6 col-lg-3 element-item burger mb-3">
-                        <img src="images/BURGER7.png" alt="" class="img-fluid rounded p-3">
-                        <p class="text-center">더블 빅맥</p>
-                    </div>
-                    <div class="col-6 col-lg-3 element-item morning mb-3">
-                        <img src="images/BURGER8.png" alt="" class="img-fluid rounded p-3">
-                        <p class="text-center">더블 빅맥</p>
-                    </div>
-                    <!-- burger -->
-                    <div class="col-6 col-lg-3 element-item morning mb-3 d-none">
-                        <img src="images/morning1.png" alt="" class="img-fluid rounded p-3">
-                        <p class="text-center">아라비아따 리코타 치즈버거</p>
-                    </div>
-                    <div class="col-6 col-lg-3 element-item morning mb-3 d-none">
-                        <img src="images/morning2.png" alt="" class="img-fluid rounded p-3">
-                        <p class="text-center">더블 빅맥</p>
-                    </div>
-                    <div class="col-6 col-lg-3 element-item morning mb-3 d-none">
-                        <img src="images/morning3.png" alt="" class="img-fluid rounded p-3">
-                        <p class="text-center">더블 빅맥</p>
-                    </div>
-                    <div class="col-6 col-lg-3 element-item morning mb-3 d-none">
-                        <img src="images/morning4.png" alt="" class="img-fluid rounded p-3">
-                        <p class="text-center">더블 빅맥</p>
-                    </div>
-                    <div class="col-6 col-lg-3 element-item morning mb-3 d-none">
-                        <img src="images/morning5.png" alt="" class="img-fluid rounded p-3">
-                        <p class="text-center">더블 빅맥</p>
-                    </div>
-                    <div class="col-6 col-lg-3 element-item morning mb-3 d-none">
-                        <img src="images/morning6.png" alt="" class="img-fluid rounded p-3">
-                        <p class="text-center">더블 빅맥</p>
-                    </div>
-                    <div class="col-6 col-lg-3 element-item morning mb-3 d-none">
-                        <img src="images/morning7.png" alt="" class="img-fluid rounded p-3">
-                        <p class="text-center">더블 빅맥</p>
-                    </div>
-                    <div class="col-6 col-lg-3 element-item morning mb-3 d-none">
-                        <img src="images/morning8.png" alt="" class="img-fluid rounded p-3">
-                        <p class="text-center">더블 빅맥</p>
-                    </div>
-                    
-                    
-                </div>
+                
             </div>
           
         </div>
-        <div class="section page1 " data-anchor="m1st">
-            <div class="container-fluid ">
+        <div class="section page3 " data-anchor="m3st">
+            <div class="container bg-warning ">
                 <div class="row align-items-center">
-                    <div class="col-md-4 text-center">
-                        <h2 class="mdotext">맥도리아의 <br>바른 먹거리</h2>
-                        <p>바른 먹거리를 위한 맥도리아의 노력을 소개합니다</p>
-                        <a href="#!" class="btn btn-outline-warning">자세히 보기</a>
+                    <div class="col-6 text-center">
+                        <h2 class="mdotext mb-3">홈서비스도 매장과 <br>동일한 가격으로!</h2>
+                        <a href="#!" class="btn btn2">자세히 보기</a>
                     </div>
-                    <div class="col-md-8">
-                        <div class="videoWrap">
-                            <video id="video" muted loop data-autoplay>
-                                <source src="images/ria_20200821.mp4" type="">
-                            </video>
+                    <div class="col-6 store">
+                        <div class="bike">
+                            <img src="images/bike.png" alt=""class="img-fluid">
                         </div>
                     </div>
                 </div>
             </div>
-      
-    </div>
-            
+        </div>
+        
+        <div class="section page4 bg-warning" data-anchor="m4st">
+            <div class="container">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class=" swiper-slide ">
+                                <img src="images/event1.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class=" swiper-slide   ">
+                                <img src="images/event2.png" alt="" class="img-fluid">
+                        </div>
+                        <div class=" swiper-slide   ">
+                                <img src="images/event3.png" alt="" class="img-fluid">
+                        </div>
+                        <div class=" swiper-slide   ">
+                            <img src="images/event4png.png" alt="" class="img-fluid">
+                        </div>
+                        <div class=" swiper-slide   ">
+                            <img src="images/event5.png" alt="" class="img-fluid">
+                        </div>
+                        
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                
+                </div>
+            </div>
+        </div>
+        <div class="section page5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md4">
+                        <img src="images/logo.png" alt="">
+                    </div>
+                    <div class="col-md4">
+                        <ul>
+                            <li>개인정보 처리방침</li>
+                            <li>위치정보 이용약관</li>
+                            <li>사이트맵</li>
+                            <li>임차문의</li>
+                            <li>고객문의</li>
+                            <li>인재채용</li>
+                        </ul>
+                    </div>            
+                    <div class="col-md4">
+                        
+                    </div>                    
+                </div>
+            </div>
+
+        </div>
             
     </div>
 
@@ -178,7 +225,17 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
          $("#fullpage").fullpage({
-            
+            menu:".topMenu",
+            // anchors:["m1st","m2st","m3st","m4st"],
+            afterLoad:function(anchorslink,index){
+                console.log(index)
+                if(index == 3){
+                    $(".bike").addClass("move")
+                }else{
+                    $(".bike").removeClass("move")
+                }
+                
+            }
         })
         const btnElem = $(".page2 .btn-group button");
         btnElem.click(function(){
@@ -189,10 +246,27 @@
             let selector = $(this).attr("data-filter")
             console.log(selector);
 
-            $(".page2 .view").isotope({
-                filter:selector
-            })
+            // $(".page2 .view").isotope({
+            //     filter:selector
+            // })
         })
+        var swiper = new Swiper(".swiper", {
+            breakpoints:{
+                640:{slidesPerView:2},
+                768:{slidesPerView:3},
+                1024:{slidesPerView:4},
+            },
+            pagination: {
+            el: ".swiper-pagination",
+            dynamicBullets: true,
+            },
+            navigation: {   // 버튼
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+            },
+      });
+          
+        
         
         
     </script>
