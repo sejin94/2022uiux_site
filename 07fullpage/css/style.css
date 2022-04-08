@@ -17,15 +17,29 @@ ul,li{list-style: none;}
     
 .mdotext{font-size:60px;}
 
-.page3 .store{background:url(../images/bgbg.jpg) no-repeat center;background-size: cover;}
-.page3 .bike.move{animation: xScroll 2s infinite alternate;transform: translateX(500px);}
+.page3 {background:url(../images/bgbg.jpg) no-repeat center;background-size: cover;}
+.page3 .bike.move{animation: xScroll 5s infinite alternate;transform: translateX(500px);}
 /* .page3 .bike{transform: translateX(900px);transition: 3s;}
 .page3 .bike.move{transform: translateX(-1500px);} */
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #ffc107;
+    background-clip: border-box;
+    border:none;
+    border-radius: 0.25rem;
+}
+
 
 @media screen and (max-width:568px){
     .page3 .mdotext{font-size: 3vh;}
     /* .swiper-button-next,.swiper-button-prev{display: none;} */
     /* .slidebox{display: flex;} */
+
 }
 @keyframes xScroll{
     to{transform:translateX(-1500px)}
