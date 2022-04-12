@@ -1,5 +1,20 @@
 $(document).ready(function(){
 
+    $(".menuWrap>li").hover(function(){
+        $(this).find(".submenu").stop().fadeIn(300);
+    },function(){
+        $(".submenu").stop().fadeOut(100)
+    })
+    // $(".menuWrap>li").mouseover(function(){
+    //     $(this).children("a").css("color","#F43B00")
+    //     $(this).find(".submenu").stop().fadeIn(300);
+    // });
+    
+    // $(".menuWrap>li").mouseout(function(){
+    //     $(this).children("a").css("color","black")
+    //     $(".submenu").stop().fadeOut(100)
+    // })
+
     $(".slider").bxSlider({auto:true});
     var myslider = $(".nSlider").bxSlider({
         controls:false,
@@ -48,23 +63,79 @@ $(document).ready(function(){
         $(this).addClass("active");
 
         if (i == 1){
-            $(".navbar ul").html(`
-                <li><a href="#">Dal.Komm</a></li>
-                <li><a href="#">Menu·Store</a></li>
-                <li><a href="#">Business</a></li>
-                <li><a href="#">News</a></li>
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">Recruit</a></li>
+            $(".navbar .menuWrap").html(`
+                 <li class="menu">
+                        <a href="dalkomm.html" class="d1">Dal.Komm</a>
+                        <ul class="submenu">
+                            <li><a href="#">brand story</a></li>
+                            <li><a href="#">App</a></li>
+                        </ul>
+                    </li>
+                   
+                    <li class="menu">
+                        <a href="#" class="d1">store</a>
+                        <ul class="submenu">
+                            <li><a href="#">menu</a></li>
+                            <li><a href="#">storeserch</a></li>
+                            <li><a href="#">global dalkomm</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu">
+                        <a href="#" class="d1">business</a>
+                        <ul class="submenu">
+                            <li><a href="#">business</a></li>
+                            <li><a href="#">business</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu">
+                        <a href="#" class="d1">news</a>
+                        <ul class="submenu">
+                            <li><a href="#">news</a></li>
+                            <li><a href="#">notice</a></li>
+                            <li><a href="#">dalkomm story</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu"><a href="#">store</a></li>
+                    <li class="menu"><a href="#">job</a></li>
             `)
+            
         } else{
-            $(".navbar ul").html(`
-                <li><a href="#">달콤</a></li>
-                <li><a href="#">메뉴·매장</a></li>
-                <li><a href="#">창업안내</a></li>
-                <li><a href="#">새로운 소식</a></li>
-                <li><a href="#">가게</a></li>
-                <li><a href="#">인재채용</a></li>
+            $(".navbar .menuWrap").html(`
+                 <li class="menu">
+                        <a href="dalkomm.html" class="d1">달콤</a>
+                        <ul class="submenu">
+                            <li><a href="#">브랜드 이야기</a></li>
+                            <li><a href="#">App 소개</a></li>
+                        </ul>
+                    </li>
+                   
+                    <li class="menu">
+                        <a href="#" class="d1">메뉴·매장</a>
+                        <ul class="submenu">
+                            <li><a href="#">메뉴</a></li>
+                            <li><a href="#">매장찾기</a></li>
+                            <li><a href="#">글로벌 달콤</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu">
+                        <a href="#" class="d1">창업안내</a>
+                        <ul class="submenu">
+                            <li><a href="#">가맹점 개설 안내</a></li>
+                            <li><a href="#">창업 상담 신청</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu">
+                        <a href="#" class="d1">새로운 소식</a>
+                        <ul class="submenu">
+                            <li><a href="#">뉴스</a></li>
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">달콤 스토리</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu"><a href="#">가게</a></li>
+                    <li class="menu"><a href="#">인재채용</a></li>
             `)
+            
         }
     }); // lang
 

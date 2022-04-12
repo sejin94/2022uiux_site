@@ -6,7 +6,7 @@
     #header{top: 0;z-index: 99999;}
     #header .lang{position: fixed;right: 16px;bottom: 16px;display: none;}
     #header .navbarWrap{
-        width: 100%;padding: 0 20px;display: block;
+        width: 100%;padding: 0 20px;
     }
     #header .navbar{
         position: fixed;margin: initial;
@@ -16,9 +16,13 @@
     }
 
     #header .navbar ul{display: block;width: 80%;}
-    #header .navbar li{width: 100%;font-weight: bold;}
+    #header .navbar .menu{width: 100%;font-weight: bold;}
     #header .navbar li:after{display: none;}
     #header .navbar li a{color: white;font-size: 20px;}
+    #header .navbar .menuWrap {
+        display: flex;flex-direction: column;justify-content: center;align-items: center;
+        width: 700px;
+    }
 
 
     .toggle{

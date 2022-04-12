@@ -94,7 +94,8 @@
     .sliderPager .boxPager li{display: block;display: flex;justify-content: center;align-items: center;}
     .sliderPager .boxPager li:hover{background: #fff;}
     .sliderPager .boxPager li:hover a{color: #000;}
-    .sliderPager .boxPager li>a{color: #fff;}
+    .sliderPager .boxPager li>a{color: #fff;line-height: 90px;width: 100%;text-align: center;}
+    .sliderPager .boxPager li>a.active{background: white;color: #000;}
     .formWrap .bx-wrapper {
         -moz-box-shadow: 0 0 0 transparent;
         -webkit-box-shadow: 0 0 0 transparent;
