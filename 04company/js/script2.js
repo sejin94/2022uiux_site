@@ -65,9 +65,9 @@ $(document).ready(function(){
         if (i == 1){
             $(".navbar .menuWrap").html(`
                  <li class="menu">
-                        <a href="dalkomm.html" class="d1">Dal.Komm</a>
+                        <a href="sub01.html" class="d1">Dal.Komm</a>
                         <ul class="submenu">
-                            <li><a href="#">brand story</a></li>
+                            <li><a href="sub01.html">brand story</a></li>
                             <li><a href="#">App</a></li>
                         </ul>
                     </li>
@@ -78,7 +78,7 @@ $(document).ready(function(){
                             <li><a href="#">menu</a></li>
                             <li><a href="#">storeserch</a></li>
                             <li><a href="#">global dalkomm</a></li>
-                        </ul>
+                        </ul>   
                     </li>
                     <li class="menu">
                         <a href="#" class="d1">business</a>
@@ -98,13 +98,18 @@ $(document).ready(function(){
                     <li class="menu"><a href="#">store</a></li>
                     <li class="menu"><a href="#">job</a></li>
             `)
+            $(".menuWrap>li").hover(function(){
+                $(this).find(".submenu").stop().fadeIn(300);
+            },function(){
+                $(".submenu").stop().fadeOut(100)
+            })
             
         } else{
             $(".navbar .menuWrap").html(`
                  <li class="menu">
-                        <a href="dalkomm.html" class="d1">달콤</a>
+                        <a href="sub01.html" class="d1">달콤</a>
                         <ul class="submenu">
-                            <li><a href="#">브랜드 이야기</a></li>
+                            <li><a href="sub01.html">브랜드 이야기</a></li>
                             <li><a href="#">App 소개</a></li>
                         </ul>
                     </li>
@@ -135,6 +140,11 @@ $(document).ready(function(){
                     <li class="menu"><a href="#">가게</a></li>
                     <li class="menu"><a href="#">인재채용</a></li>
             `)
+            $(".menuWrap>li").hover(function(){
+                $(this).find(".submenu").stop().fadeIn(300);
+            },function(){
+                $(".submenu").stop().fadeOut(100)
+            })
             
         }
     }); // lang
