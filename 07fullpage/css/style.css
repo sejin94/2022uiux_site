@@ -31,6 +31,14 @@ ul,li{list-style: none;}
 }
 
 
+.nextBtn{
+    position: absolute;bottom: 80px;left:50%;transform: translateX(-50%);
+    animation: Scroll 0.8s infinite alternate;
+}
+@keyframes Scroll{
+    to{bottom:50px}
+}
+
 @media screen and (max-width:568px){
     .page3 .mdotext{font-size: 3vh;}
     /* .swiper-button-next,.swiper-button-prev{display: none;} */
@@ -39,11 +47,4 @@ ul,li{list-style: none;}
 }
 @keyframes xScroll{
     to{transform:translateX(-1500px)}
-}
-.nextBtn{
-    position: absolute;bottom: 80px;left:50%;transform: translateX(-50%);
-    animation: xScroll 0.8s infinite alternate;
-}
-@keyframes xScroll{
-    to{bottom:50px}
 }
