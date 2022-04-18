@@ -23,7 +23,7 @@ ul,li{list-style: none;}
 /* .page3 .bike{transform: translateX(900px);transition: 3s;}
 .page3 .bike.move{transform: translateX(-1500px);} */
 
-.section.page5{height: 300px !important;background: red;}
+.section.page5{height: 300px !important;background: #292929;color: #fff;}
 .section.page5 .icon>ul>li{
     width: 45px;height: 45px;background: white;
     display: flex;justify-content: center;align-items: center;
@@ -39,4 +39,11 @@ ul,li{list-style: none;}
 }
 @keyframes xScroll{
     to{transform:translateX(-1500px)}
+}
+.nextBtn{
+    position: absolute;bottom: 80px;left:50%;transform: translateX(-50%);
+    animation: xScroll 0.8s infinite alternate;
+}
+@keyframes xScroll{
+    to{bottom:50px}
 }
