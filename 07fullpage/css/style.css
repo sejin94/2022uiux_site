@@ -19,7 +19,7 @@ ul,li{list-style: none;}
 .mdotext{font-size:60px;}
 
 .page3 {background:url(../images/bgbg.jpg) no-repeat center;background-size: cover;}
-.page3 .bike.move{animation: xScroll 5s infinite alternate;transform: translateX(500px);}
+.page3 .bike.move{animation: xScroll 5s infinite alternate;transform: translateX(700px);}
 /* .page3 .bike{transform: translateX(900px);transition: 3s;}
 .page3 .bike.move{transform: translateX(-1500px);} */
 
@@ -40,11 +40,13 @@ ul,li{list-style: none;}
 }
 
 @media screen and (max-width:568px){
-    .page3 .mdotext{font-size: 3vh;}
+    .page3 .mdotext{font-size: 4vh;}
     /* .swiper-button-next,.swiper-button-prev{display: none;} */
     /* .slidebox{display: flex;} */
-
+    .page3 .bike.move{animation: xScroll 5s infinite alternate;transform: translateX(100px);}
+    
 }
 @keyframes xScroll{
     to{transform:translateX(-1500px)}
 }
+
